@@ -4,17 +4,24 @@ body{
 }
 
 .container{
-    display: flex;
+display:flex;
 }
 
 .cartao{
-    margin: 1rem 1rem;
+    margin:1rem 1rem;
     background-color: beige;
-    height: 20rem
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis:calc(33% - 6rem);
+}
+
+.cartao_conteudo{
+    text-align: center;
+    height: 100%;
 }
 
 .cartao_conteudo h3 {
-    background-color: tomato;
+    background-color: rgb(219, 135, 121);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
