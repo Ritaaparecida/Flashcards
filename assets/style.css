@@ -5,11 +5,16 @@ body{
 
 .container{
 display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 4rem;
+gap: 3rem;
+ 
 }
 
 .cartao{
     margin:1rem 1rem;
-    background-color: beige;
+    
     height: 20rem;
     flex-grow: 1;
     flex-basis:calc(33% - 6rem);
@@ -17,6 +22,7 @@ display:flex;
 
 .cartao_conteudo{
     text-align: center;
+    background-color: azure;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
@@ -30,11 +36,13 @@ display:flex;
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+    backface-visibility: hidden;
 }
 
 .cartao_conteudo p {
-    margin-top: 1rem;
+    margin-top: 4rem;
     padding: 2rem;
+
 }
 
 
